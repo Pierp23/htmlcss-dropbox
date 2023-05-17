@@ -144,7 +144,6 @@ header{
 }
 
 .container-header-2 img{
-    display: block;
     width: 100%;
     height: 400px;
 }
@@ -153,25 +152,17 @@ header{
 
 
 /* MAIN */
-main > .container-main{
-    display: flex;
-    padding: 30px 0;
-
-}
-
 .container-little{
     max-width: 900px;
     margin: 0 auto;
 }
 
-.box-main{
-    display: flex;
-    margin: 20px auto;
-    width: calc(100% - 50%);
-}
-
 .container-little .radio{
     margin-bottom: 30px;
+}
+
+.container-little .radio #radio-2{
+    margin-left: 30px;
 }
 
 .container-little .riga .col{
@@ -181,7 +172,7 @@ main > .container-main{
 }
 
 
-.container-little .riga .col .first-box{
+.container-little .first-box{
     text-align: center;
     padding: 10px 0;
     border: 1px solid lightgray;
@@ -241,14 +232,6 @@ main > .container-main{
     position: relative;
 }
 
-.enterprise .riga-1{
-    text-align: center;
-    padding: 10px 0;
-    border: 1px solid lightgray;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
 
 .enterprise > div:last-of-type{
     padding-left: 20px;
@@ -259,10 +242,6 @@ main > .container-main{
     font-size: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-}
-
-.enterprise .bold{
-    font-weight: bold;
 }
 
 .enterprise div div:last-of-type{
@@ -277,39 +256,33 @@ main > .container-main{
     top: 50px;
 }
 
-
-
-#split .row{
-    display: flex;
-}
-
-#split .row .coll-1{
+/* BOX CON FOTO */
+.box-split .my-row .coll-1{
     width: calc(100% - 40%);
 }
 
-#split .row img{
+.box-split .my-row img{
     width: 100%;
-    display: block;
 }
 
-#split .row > div:last-of-type{
+.box-split .my-row > div:last-of-type{
     padding-top: 30px;
     padding-left: 30px;
 }
 
-#split .row > div:last-of-type *{
+.box-split .my-row > div:last-of-type *{
     margin-bottom: 30px;
 }
 
-#split .row h3{
+.box-split .my-row h3{
     font-size: 20px;
 }
 
-#split .row p{
+.box-split .my-row p{
     font-size: 15px;
 }
 
-#split .row a{
+.box-split .my-row a{
     border: 1px solid black;
     padding: 10px;
 }
@@ -355,6 +328,7 @@ main > .container-main{
 
 /* BOX LOGHI */
 main .box-loghi{
+    display: flex;
     padding: 0;
 }
 
@@ -454,6 +428,11 @@ main .box-loghi > div{
 
 
 /* BOX DOMANDE FREQUENTI*/
+.box-end{
+    display: flex;
+    flex-direction: column;
+}
+
 .box-end .row *{
     font-size: 15px;
 }
@@ -471,10 +450,6 @@ main .box-loghi > div{
     border-bottom: 1px solid lightgray;
 }
 
-.box-end{
-    display: flex;
-    flex-direction: column;
-}
 
 .tendina{
     display: none;
@@ -492,22 +467,17 @@ main .box-loghi > div{
 
 /* FOOTER */
 .container-footer{
-    display: flex;
+    padding-bottom: 10px;
     background-color: #23272A;
-}
-
-.box-footer{
-    display: flex;    
-    margin: 10px auto;
-    margin-bottom: 20px;
-    width: calc(100% - 30%);
-    padding-top: 40px;
-    padding-bottom: 100px;
 }
 
 .box-top-footer{
     display: flex;
     width: 100%;
+    margin: 10px auto;
+    width: calc(100% - 30%);
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
 .col-box-top-footer{
@@ -522,7 +492,7 @@ main .box-loghi > div{
     padding: 5px 0;
 }
 
-.box-footer .link-big{
+.box-top-footer .link-big{
     font-size: 20px;
     font-weight: bold;
 } 
