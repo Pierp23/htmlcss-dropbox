@@ -42,6 +42,10 @@ a{
     padding-bottom: 80px;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 
 /* HEADER */
 
@@ -104,13 +108,13 @@ header{
 }
 
 
-.header-box-pink{
+.header-box{
     max-width: 1200px;
     position: relative;
     top: 50px
 }
 
-.header-box-pink h1{
+.header-box h1{
     font-size: 70px;
 
 }
@@ -191,6 +195,7 @@ main > .container-main{
 .container-little .riga .col .fourth-box,
 .container-little .riga .col .fifth-box{
     padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -211,6 +216,25 @@ main > .container-main{
     font-size: 14px;
 }
 
+.container-little .riga .col .third-box,
+.container-little .riga .col .fourth-box
+{
+    padding-top: 0;
+}
+
+.container-little .riga .col .fourth-box > .button-blue{
+    width: 100%;
+    text-align: center;
+
+}
+
+.container-little .riga .col .fourth-box div{
+    text-align: left;
+}
+
+
+
+/* BOX AZIENDA */
 
 .enterprise{
     border: 1px solid lightgray;
@@ -345,35 +369,42 @@ main .box-loghi > div{
     justify-content: left;
 }
 
-.quadrato-4 img{
+.quadrato-4 > div {
     width: calc(100% / 2);
     height: calc(100% / 2);
-    padding: 50px;
-    object-fit: contain;
 }
 
-.logo-1{
+.quadrato-4 > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 30px;
+    background-color: transparent;
+    filter: invert(1);
+}
+
+.img-1{
     background-color: #A2D39B;
 }
-.logo-2{
+.img-2{
     background-color: #61082B;
 }
-.logo-3{
+.img-3{
     background-color: #0093CE;
 }
-.logo-4{
+.img-4{
     background-color: red;
 }
-.logo-5{
+.img-5{
     background-color: #D5001F;
 }
-.logo-6{
+.img-6{
     background-color: #B4D0E7;
 }
-.logo-7{
+.img-7{
     background-color: #0D2481;
 }
-.logo-8{
+.img-8{
     background-color: #FFD830;
 }
 
@@ -463,7 +494,7 @@ main .box-loghi > div{
     margin-bottom: 20px;
     width: calc(100% - 30%);
     padding-top: 40px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 .box-top-footer{
