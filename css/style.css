@@ -22,13 +22,13 @@ a{
 .button-blue{
     background-color: blue;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 .button-white{
     background-color: white;
     color: black;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 .hr{
@@ -82,7 +82,7 @@ header{
     justify-content: space-between;
 }
 .box-nav ul li{
-    padding: 0 10px;
+    margin: 0 10px;
     color: black;
 }
 
@@ -109,7 +109,7 @@ header{
 
 
 .header-box{
-    max-width: 1200px;
+    max-width: 1000px;
     position: relative;
     top: 50px
 }
@@ -124,22 +124,22 @@ header{
 }
 
 .column-1{
-    width: calc(100% - 70%);
+    width: calc(100% / 3);
     margin-top: 20px;
 }
 
 .column-2{
-    width: calc(100% - 30%);
+    width: calc((100% / 3) * 2.5);
     margin-top: 20px;
 }
 
 .my-row .column-1 *:not(i){
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .my-row .column-1 i{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 0;
 }
 
@@ -160,6 +160,11 @@ header{
 .container-little .radio{
     margin-bottom: 30px;
 }
+
+.container-little .radio *{
+    cursor: pointer;
+}
+
 
 .container-little .radio #radio-2{
     margin-left: 30px;
@@ -249,10 +254,19 @@ header{
     position: relative;
 }
 
+.enterprise .second-box{
+    display: flex;
+    justify-content: space-between;
+}
 
-.enterprise > div:last-of-type{
-    padding-left: 20px;
-    padding-bottom: 20px;
+.enterprise .second-box .col-1{
+    width: 60%;
+    margin-left: 20px;
+}
+
+.enterprise .second-box .col-btn{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .enterprise h3{
@@ -261,16 +275,15 @@ header{
     padding-top: 10px;
 }
 
-.enterprise div div:last-of-type{
+.enterprise .col-1 div:last-of-type{
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .enterprise a{
     padding-left: 20px;
     padding-right: 20px;
-    position: absolute;
-    right: 10px;
-    top: 50px;
+
 }
 
 /* BOX CON FOTO */
@@ -302,7 +315,6 @@ header{
 
 .box-split .my-row a{
     border: 1px solid black;
-    padding: 10px;
 }
 
 
@@ -455,6 +467,10 @@ main .box-loghi > div{
     flex-direction: column;
 }
 
+.box-end .row{
+    cursor: pointer;
+}
+
 .box-end .row *{
     font-size: 15px;
 }
@@ -516,6 +532,7 @@ main .box-loghi > div{
 
 .box-top-footer .link-big{
     font-size: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
 } 
 
@@ -540,4 +557,44 @@ select{
     color: white;
     border: none;
     font-size: 13px;
+    cursor: pointer;
+}
+
+
+/* BONUS DROPDOWN*/
+.box-nav li{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.box-nav li:hover .dropdown-content {
+    display: block;
+    min-width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+.box-nav li:hover .dropdown-content *{
+    display: block;
+    padding: 5px 12px;
+}
+
+.box-nav li .dropdown-content a:hover{
+    background-color: grey;
+}
+
+.box-nav li:hover .dropdown-content a:first-child{
+    display: none;
+}
+
+/* BONUS MOVIMENTO */
+.box-operations .col:hover{
+    transform: scale(110%);
+}
+
+.tariffe .col:hover,
+.enterprise:hover{
+    transform: scale(103%);
 }
