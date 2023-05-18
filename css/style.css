@@ -191,6 +191,12 @@ header{
     padding-bottom: 30px;
 }
 
+.container-little .riga .col .third-box,
+.container-little .riga .col .fifth-box{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
 .container-little .riga .col .second-box h3{
     font-size: 20px;
 }
@@ -203,8 +209,19 @@ header{
 .container-little .riga .col .fifth-box > div{
     padding-top: 15px;
 }
+.container-little .riga .col .third-box  ul li,
+.container-little .riga .col .fifth-box ul li{
+    padding-bottom: 15px ;
+}
+
+
 .container-little .riga .col .fifth-box h5{
     font-size: 14px;
+    padding-left: 10px;
+}
+
+.container-little .riga .col .fifth-box i{
+    color: blue;
 }
 
 .container-little .riga .col .third-box,
@@ -258,7 +275,7 @@ header{
 
 /* BOX CON FOTO */
 .box-split .my-row .coll-1{
-    width: calc(100% - 40%);
+    width: calc((100% / 2) * 5);
 }
 
 .box-split .my-row img{
@@ -268,6 +285,7 @@ header{
 .box-split .my-row > div:last-of-type{
     padding-top: 30px;
     padding-left: 30px;
+    padding-right: 10px;
 }
 
 .box-split .my-row > div:last-of-type *{
@@ -275,7 +293,7 @@ header{
 }
 
 .box-split .my-row h3{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .box-split .my-row p{
@@ -395,6 +413,10 @@ main .box-loghi > div{
 }
 .quadrato img{
     width: 200px
+}
+
+.quadrato p{
+    font-size: 1.2em;
 }
 
 .quadrato p:first-of-type{
