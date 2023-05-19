@@ -21,12 +21,14 @@ a{
 }
 
 .button-blue{
+    display: inline-block;
     background-color: blue;
     color: white;
     padding: 10px 10px;
 }
 
 .button-white{
+    display: inline-block;
     background-color: white;
     color: black;
     padding: 10px 10px;
@@ -78,7 +80,8 @@ header{
 
 .box-nav ul{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
 }
 
 .box-nav ul li{
@@ -100,7 +103,7 @@ header{
 }
 
 .container-header-2{
-    max-height: 550px;
+    max-height: 600px;
     background-color: #B4D0E7;
     justify-content: center;
     display: flex;
